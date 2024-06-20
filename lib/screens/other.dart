@@ -17,10 +17,20 @@ class OtherScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            ElevatedButton(onPressed: () {
-              Get.back();
-            },
-                child: Text('Open other screen')),
+            Container(
+              width: 200, // Set the width you want
+              height: 50,
+              child: ElevatedButton(style: ElevatedButton.styleFrom(
+                primary: Colors.blue, // Background color
+                onPrimary: Colors.white, // Text color
+                minimumSize: Size(200, 50), // Width and height
+              ),
+                  onPressed: () {
+
+                Get.back();
+              },
+                  child: Text('Open other screen')),
+            ),
           ],
         ),
       ),
