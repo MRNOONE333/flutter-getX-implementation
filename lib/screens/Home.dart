@@ -24,7 +24,13 @@ class HomeScreen extends StatelessWidget {
           ]),
         ),
       ),
-
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          counterController.increment();
+        },
+        child: Icon(Icons.add),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
