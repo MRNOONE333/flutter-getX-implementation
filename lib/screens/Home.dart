@@ -16,20 +16,18 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Container(
-              width: 200,
-              height: 50,
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.blue, // Background color
-                    onPrimary: Colors.white, // Text color
-                    minimumSize: Size(200, 50), // Width and height
-                  ),
-                  onPressed: () {
-                    Get.to(OtherScreen());
-                  },
-                  child: Text('Open other screen')),
-            )
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.blue,
+                  onPrimary: Colors.white,
+                  minimumSize: Size(200, 75),
+                ),
+                onPressed: () {
+                  Get.to(OtherScreen());
+                },
+                child: Text('Open other screen',
+                style: TextStyle(fontSize: 25),
+                ))
           ]),
         ),
       ),
