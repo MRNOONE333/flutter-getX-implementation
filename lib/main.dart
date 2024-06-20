@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx1/controllers/counterController.dart';
 
 
 void main(){
@@ -15,7 +16,7 @@ class Myapp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Placeholder(),
+      home: HomeScreen(),
     );
   }
 }
