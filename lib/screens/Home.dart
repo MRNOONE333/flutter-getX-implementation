@@ -12,7 +12,8 @@ class HomeScreen extends StatelessWidget {
       body: Obx(
         () => Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text('click: ${counterController.counter.value}'),
+            Text('click: ${counterController.counter.value}',
+              style: TextStyle(fontSize: 25,color: Colors.blue),),
             SizedBox(
               height: 10,
             ),

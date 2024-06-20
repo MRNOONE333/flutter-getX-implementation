@@ -13,7 +13,11 @@ class OtherScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('the button was clicked : ${_counterController.counter.value} number of times'),
+            Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: Text('the button was clicked : ${_counterController.counter.value} number of times',
+              style: TextStyle(fontSize: 25,color: Colors.blue),),
+            ),
             SizedBox(
               height: 10,
             ),
