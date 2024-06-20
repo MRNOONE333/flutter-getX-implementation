@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue,
         onPressed: () {
           counterController.increment();
         },
